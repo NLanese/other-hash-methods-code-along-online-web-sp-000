@@ -10,7 +10,7 @@ require 'pry'
 
 def get_the_min(groceries)
   foodList = groceries.min
-  first = food[0]
+  first = foodList[0]
   foodList.each do |item|
     if (item < first)
       first = item
