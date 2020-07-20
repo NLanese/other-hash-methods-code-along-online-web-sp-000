@@ -11,7 +11,8 @@ require 'pry'
 def get_the_min(groceries)
   lowest = "zzz"
   allFood = []
-  groceries.each do | foodGroup |
+  foodList = groceries.values
+  foodList.each do | foodGroup |
     foodGroup.each do | food |
       allFood << food
     end
