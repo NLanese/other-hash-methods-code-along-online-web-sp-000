@@ -16,5 +16,5 @@ def get_the_values(groceries)
       rArray << food
     end
   end
-  return rArray 
+  return rArray
 end
