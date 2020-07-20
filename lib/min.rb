@@ -12,7 +12,7 @@ def get_the_min(groceries)
   lowest = "zzz"
   groceries.each do | foodGroup |
     foodGroup.each do | food |
-      if (food < lowest) 
+      if (food < lowest)
         lowest = food
       end
     end
