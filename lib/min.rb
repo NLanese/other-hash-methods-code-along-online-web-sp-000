@@ -14,8 +14,10 @@ def get_the_min(groceries)
   foodList = groceries.values
   foodList.each do | foodGroup |
     foodGroup.each do | food |
-      allFood << food
+      if (lowest > food)
+        lowest = food
+      end
     end
   end
-  return allFood
+  return lowest
 end
