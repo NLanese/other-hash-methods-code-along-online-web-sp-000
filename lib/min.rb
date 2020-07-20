@@ -9,5 +9,13 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  groceries.min
+  lowest = "zzz"
+  groceries.each do | foodGroup |
+    foodGroup.each do | food |
+      if (food < lowest) 
+        lowest = food
+      end
+    end
+  end
+  return lowest
 end
