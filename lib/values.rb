@@ -9,5 +9,6 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-  groceries.values
+  newGroceries = groceries.values
+  return newGroceries.join
 end
